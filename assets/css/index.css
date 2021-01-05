@@ -1,0 +1,143 @@
+/* line 1, blocks\header.less */
+body#lighten {
+  background-color: #F8F9FF;
+}
+/* line 5, blocks\header.less */
+header .container {
+  width: 1815px;
+  margin: 0 auto;
+}
+/* line 10, blocks\header.less */
+header .container .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  height: 50px;
+}
+/* line 18, blocks\header.less */
+header .container .burger {
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+/* line 21, blocks\header.less */
+header .container .burger .line {
+  width: 20px;
+  border-radius: 50px;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #000000;
+}
+/* line 29, blocks\header.less */
+header .container .logo {
+  min-height: 25px;
+  margin-left: 30px;
+}
+/* line 33, blocks\header.less */
+header .container .logo .logo_yt {
+  position: relative;
+  color: black;
+  font-weight: 600;
+}
+/* line 38, blocks\header.less */
+header .container .logo .logo_yt span#before,
+header .container .logo .logo_yt span#after {
+  text-transform: uppercase;
+}
+/* line 41, blocks\header.less */
+header .container .logo .logo_yt ._ico-youtube:before {
+  position: absolute;
+  color: #FF0000;
+  font-size: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 47, blocks\header.less */
+header .container .logo .logo_yt #logo__text {
+  padding-left: 41px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  letter-spacing: -2px;
+}
+/* line 56, blocks\header.less */
+header .container .search {
+  width: 830px;
+  height: 44px;
+  margin-left: 83px;
+  position: relative;
+}
+/* line 62, blocks\header.less */
+header .container .search #search__border {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 20px;
+  background-color: #EBEBEB;
+  color: #30384C;
+  border: 0;
+  outline: 0;
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+/* line 77, blocks\header.less */
+header .container .search ._ico-search::before {
+  content: "\e904";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: -28px;
+  font-size: 20px;
+  color: black;
+}
+/* line 88, blocks\header.less */
+header .container .golive {
+  margin-left: 505px;
+}
+/* line 90, blocks\header.less */
+header .container .golive ._ico-camera:before {
+  color: gray;
+  cursor: pointer;
+}
+/* line 95, blocks\header.less */
+header .container .dashboard {
+  color: gray;
+  cursor: pointer;
+  margin-left: 50px;
+}
+/* line 100, blocks\header.less */
+header .container .dashboard ._ico-dots:before {
+  color: #000;
+}
+/* line 105, blocks\header.less */
+header .container .news {
+  color: gray;
+  cursor: pointer;
+  margin-left: 50px;
+}
+/* line 110, blocks\header.less */
+header .container .news ._ico-news:before {
+  color: #000;
+}
+/* line 115, blocks\header.less */
+header .container .avatar > img {
+  border-radius: 50%;
+  width: 40px;
+  margin-left: 50px;
+}
+/* line 121, blocks\header.less */
+header .size {
+  width: 20px!important;
+}
+/* line 20, C:\OpenServer\domains\yt.jp\assets\less\vars.less */
+.fo-inter {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 24, C:\OpenServer\domains\yt.jp\assets\less\vars.less */
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.css.map */
