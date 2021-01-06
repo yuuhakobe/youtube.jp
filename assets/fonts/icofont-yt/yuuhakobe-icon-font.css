@@ -40,3 +40,30 @@
 ._ico-search:before {
   content: "\e904";
 }
+.icon-setting:before {
+  content: "\e900";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-doc:before {
+  content: "\e902";
+}
+.icon-map:before {
+  content: "\e903";
+}
+.icon-fail:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e905";
+}
+.icon-liked:before {
+  content: "\e906";
+}
+.icon-song:before {
+  content: "\e908";
+}
+.icon-Combined-Shape:before {
+  content: "\e909";
+}
