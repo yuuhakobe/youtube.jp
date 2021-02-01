@@ -13,22 +13,35 @@ header {
             height: 100px;
 
             .burger__menu {
+                
+                position: relative;
+                width: 40px;
+                cursor: pointer;
+                    .burger {
 
-                .burger {
+                        position: absolute;
+                        top: 50%; transform: translateY(-50%);
+                        left: 0;
 
-                    width: 20px;
-                    height: 3px;
-                    border-radius: 20%;
-                    background-color: #000;
+                       width: 100%; height: 5px;
+                       border-radius: 20px;
+                       background-color: @burger;
+                       cursor: pointer;
 
-                    &::before, &::after {
-                        
-                        width: 20px;
-                        height: 3px;
-                        border-radius: 20%;
-                        background-color: #000;
+                        &::before, &::after {
+
+                            content: '';
+                            width: 100%; height: 5px;
+                            border-radius: 20%;
+                            background-color: @burger;
+                            border-radius: 20px;
+
+                            display: block;
+                            position: absolute;
+                        }
+                        &::before { top: -10px; } &::after { top: 10px; }
+                        &:checked { background-color: green; }
                     }
-                }
 
                 input {
                     appearance: none;
