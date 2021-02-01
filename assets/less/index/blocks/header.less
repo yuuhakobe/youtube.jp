@@ -16,9 +16,18 @@ header {
 
                 .burger {
 
-                    width: 40px;
-                    height: 10px;
+                    width: 20px;
+                    height: 3px;
+                    border-radius: 20%;
                     background-color: #000;
+
+                    &::before, &::after {
+                        
+                        width: 20px;
+                        height: 3px;
+                        border-radius: 20%;
+                        background-color: #000;
+                    }
                 }
 
                 input {
