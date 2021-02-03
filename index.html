@@ -6,6 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="discription" content="This is online web hosting remake of offical YouTube site.">
+    <meta name="keywords" content="youtube, yuuhakobe, hakobe, yt, jp, yt jp, youtube jp">
+    <meta name="author" content="Yuu Hakobe, yuuhakobe1200@gmail.com">
+    <meta name="copyright" content="yuuhakobe">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index, folow">
+    <meta name="revised" content="Monday, January 02nd, 2021, 9:00 AM">
+    <meta name="designer" content="YouTube company">
+    <meta name="url" content="https://www.youtube.jp">
+
     <!-- links -->
 
         <!-- page styles -->
@@ -14,7 +24,8 @@
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">     
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
         <!-- icon font -->
         <link rel="stylesheet" href="assets/fonts/style.css">
@@ -22,7 +33,7 @@
         <!-- favicon -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <title>home | YouTube</title>
+    <title>YouTube</title>
     
 </head>
 <body id="light"> 
@@ -31,14 +42,25 @@
     <div class="container">
         <div class="header__inner">
             
-            <div class="burger__menu">
+            <div class="start">
+                <div class="burger__menu">
 
-                <label for="trigger"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="trigger">
-
+                    <label for="trigger"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="trigger">
+    
+                </div>
+    
+                <div class="logo"><a href="#" class="icon-logo">YouTube</a></div>
+    
+                <form action="/result" method="GET" class="search-form" > <input type="text" placeholder="Search"> <button class="icon-search"></button> </form>
+                
             </div>
-            <div class="logo"><a href="#" class="icon-logo">YouTube</a></div>
-
+            <div class="end">
+                    <a href="" class="icon-vidio-cam" alt="vidio-cam" title="create"></a>
+                    <a href="" class="icon-combined-dots" alt="combined-dots" title="YouTube applications" ></a>
+                    <a href="" class="icon-bell" alt="bell" title="announcements" ></a>
+                    <img src="assets/img/uploads/lady.png" alt="">
+            </div>
         </div>
     </div>
 </header>
