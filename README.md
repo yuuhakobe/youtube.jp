@@ -15,4 +15,9 @@ Start coding aside! <br />
 I finish to code header <br />
 Next step is side bar. (aside) <br />
  <br />
+ 02:02:2021 4:35 PM <br />
+I finish to code aside <br />
+Next step is all content! then mobile version! <br />
+https://prnt.sc/y5o9u3
+ <br />
 
