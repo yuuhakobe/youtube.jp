@@ -1,122 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="This is online web hosting remake of offical YouTube site." />
+        <meta name="keywords" content="youtube, yuuhakobe, hakobe, yt, jp, yt jp, youtube jp" />
+        <meta name="author" content="Yuu Hakobe, yuuhakobe1200@gmail.com" />
+        <meta name="copyright" content="yuuhakobe" />
+        <meta name="language" content="EN" />
+        <meta name="robots" content="index, folow" />
+        <meta name="revised" content="Monday, January 02nd, 2021, 9:00 AM" />
+        <meta name="designer" content="YouTube company" />
+        <meta name="url" content="https://www.youtube.jp" />
 
-    <meta name="discription" content="This is online web hosting remake of offical YouTube site.">
-    <meta name="keywords" content="youtube, yuuhakobe, hakobe, yt, jp, yt jp, youtube jp">
-    <meta name="author" content="Yuu Hakobe, yuuhakobe1200@gmail.com">
-    <meta name="copyright" content="yuuhakobe">
-    <meta name="language" content="EN">
-    <meta name="robots" content="index, folow">
-    <meta name="revised" content="Monday, January 02nd, 2021, 9:00 AM">
-    <meta name="designer" content="YouTube company">
-    <meta name="url" content="https://www.youtube.jp">
-
-    <!-- links -->
+        <!-- links -->
 
         <!-- page styles -->
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
-        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
 
         <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">     
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
 
         <!-- icon font -->
-        <link rel="stylesheet" href="assets/fonts/style.css">
-        
+        <link rel="stylesheet" href="assets/fonts/style.css" />
+
         <!-- favicon -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>YouTube</title>
-    
-</head>
-<body id="light"> 
+        <title>YouTube</title>
+    </head>
+    <body id="light">
+        <header>
+            <div class="container">
+                <div class="header__inner">
+                    <div class="start">
+                        <div class="burger__menu">
+                            <label for="trigger"><i class="fas fa-bars"></i></label>
+                            <input type="checkbox" id="trigger" />
+                        </div>
 
-<header>
-    <div class="container">
-        <div class="header__inner">
-            
-            <div class="start">
-                <div class="burger__menu">
+                        <div class="logo"><a href="#" class="icon-logo">YouTube</a></div>
 
-                    <label for="trigger"><i class="fas fa-bars"></i></label>
-                    <input type="checkbox" id="trigger">
-    
+                        <form action="/resdivt" method="GET" class="search-form"><input type="text" placeholder="Search" /> <button class="icon-search"></button></form>
+                    </div>
+                    <div class="end">
+                        <a href="" class="icon-vidio-cam" alt="vidio-cam" title="create"></a>
+                        <a href="" class="icon-combined-dots" alt="combined-dots" title="YouTube applications"></a>
+                        <a href="" class="icon-bell" alt="bell" title="announcements"></a>
+                        <img src="assets/img/uploads/lady.png" alt="" />
+                    </div>
                 </div>
-    
-                <div class="logo"><a href="#" class="icon-logo">YouTube</a></div>
-    
-                <form action="/resdivt" method="GET" class="search-form" > <input type="text" placeholder="Search"> <button class="icon-search"></button> </form>
-                
             </div>
-            <div class="end">
-                    <a href="" class="icon-vidio-cam" alt="vidio-cam" title="create"></a>
-                    <a href="" class="icon-combined-dots" alt="combined-dots" title="YouTube applications" ></a>
-                    <a href="" class="icon-bell" alt="bell" title="announcements" ></a>
-                    <img src="assets/img/uploads/lady.png" alt="">
-            </div>
-        </div>
-    </div>
-</header>
-<main>
-    <div class="container">
-        <aside class="side-bar">
-            <div class="side-bar__section">
-                <div class="side-bar__item" ><a href="/" class="icon-home now">Home</a></div>
-                <div class="side-bar__item" ><a href="/" class="icon-subscriptions">Trending</a></div>
-                <div class="side-bar__item" ><a href="/" class="icon-subscriptions">Subscriptions</a></div>
-            </div>
-            <div class="side-bar__section">
-                <div class="side-bar__item2" ><a href="/" class="icon-library">Library</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-history">History</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-watch-later">Watch later</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-favourites">Favourites</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-liked">Liked videos</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-music">Music</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-games">Games</a></div>
-                <div class="side-bar__item2" ><a href="/" class="icon-down">Show more</a></div>
-            </div>
-            <div class="side-bar__section">
-                <div><h2>Subsribtions</h2></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/profile.jpg" alt="avatar"> Montux
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-                <div class="side-bar__item3"><a class="side-bar_links" href="">
-                    <img src="assets/img/uploads/lady.png" alt="avatar"> YuuHakobe
-                </a></div>
-            </div>
-        </aside>
+        </header>
+        <main>
+            <div class="container">
+                <aside class="side-bar">
+                    <div class="side-bar__section">
+                        <div class="side-bar__item"><a href="/" class="icon-home now">Home</a></div>
+                        <div class="side-bar__item"><a href="/" class="icon-subscriptions">Trending</a></div>
+                        <div class="side-bar__item"><a href="/" class="icon-subscriptions">Subscriptions</a></div>
+                    </div>
+                    <div class="side-bar__section">
+                        <div class="side-bar__item2"><a href="/" class="icon-library">Library</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-history">History</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-watch-later">Watch later</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-favourites">Favourites</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-liked">Liked videos</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-music">Music</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-games">Games</a></div>
+                        <div class="side-bar__item2"><a href="/" class="icon-down">Show more</a></div>
+                    </div>
+                    <div class="side-bar__section">
+                        <div><h2>Subsribtions</h2></div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/profile.jpg" alt="avatar" /> Montux </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                        <div class="side-bar__item3">
+                            <a class="side-bar_links" href=""> <img src="assets/img/uploads/lady.png" alt="avatar" /> YuuHakobe </a>
+                        </div>
+                    </div>
+                </aside>
 
-        <div class="content">
-            
-        </div>
+                <div class="content">
+                    <div class="channel">
+                        <div class="channel__image">
+                            <a href=""> <img src="assets/img/uploads/profile.jpg" alt="" />channel name </a>
+                        </div>
 
-    </div>
-</main>
+                        <div class="channel__videos">
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                        </div>
+                    </div>
+                    <div class="recomended">
+                        <div class="recomended__title"><h1>Recomended</h1></div>
+                        <div class="recomended__videos">
+                            <!-- One video block   -->
+                            <div class="recomended__video">
+                                <div class="recomended__video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/recomended.jpg" alt="" />
+                                        <span class="recomended__video__">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="recomended__video__details">
+                                    <div class="recomended__video__details__title"><h1>This is vidio form page Trend</h1></div>
+                                    <div class="recomended__video__details__stats">
+                                        <div>
+                                            <span>views</span>
+                                            <span>date</span>
+                                        </div>
+                                        <span>author</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block   -->
+                            <div class="recomended__video">
+                                <div class="recomended__video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/recomended.jpg" alt="" />
+                                        <span class="recomended__video__">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="recomended__video__details">
+                                    <div class="recomended__video__details__title"><h1>This is vidio form page Trend</h1></div>
+                                    <div class="recomended__video__details__stats">
+                                        <div>
+                                            <span>views</span>
+                                            <span>date</span>
+                                        </div>
+                                        <span>author</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block   -->
+                            <div class="recomended__video">
+                                <div class="recomended__video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/recomended.jpg" alt="" />
+                                        <span class="recomended__video__">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="recomended__video__details">
+                                    <div class="recomended__video__details__title"><h1>This is vidio form page Trend</h1></div>
+                                    <div class="recomended__video__details__stats">
+                                        <div>
+                                            <span>views</span>
+                                            <span>date</span>
+                                        </div>
+                                        <span>author</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                        </div>
+                    </div>
 
+                    <div class="channel">
+                        <div class="channel__image">
+                            <a href=""> <img src="assets/img/uploads/lady.png" alt="" />channel name </a>
+                        </div>
 
-    <!-- vendor -->
-    <script src="https://kit.fontawesome.com/4628d50a19.js" crossorigin="anonymous"></script>
-</body>
+                        <div class="channel__videos">
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-1.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-2.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-3.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-4.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover-5.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                            <!-- One video block -->
+                            <div class="video">
+                                <div class="video__image">
+                                    <a href="">
+                                        <img src="assets/img/content/Cover.jpg" alt="video" />
+                                        <span class="video__time">4:15</span>
+                                    </a>
+                                </div>
+                                <div class="video__details">
+                                    <div class="title"><h1>name of this video</h1></div>
+                                    <div class="stats">
+                                        <span>views</span>
+                                        <span>date</span>
+                                        <span>channel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One video block  - END - -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- vendor -->
+        <script src="https://kit.fontawesome.com/4628d50a19.js" crossorigin="anonymous"></script>
+    </body>
 </html>

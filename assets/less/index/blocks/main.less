@@ -8,6 +8,9 @@
     font-size: 10px!important;
     margin-left: 5px;
 }
+a {
+    color: black;
+}
 main {
     .f-main;
     .container {
@@ -60,6 +63,133 @@ main {
                 }
                 .side-bar__item, .side-bar__item2, .side-bar__item3 {
                     margin-bottom: 10px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .channel {
+                .channel__image {
+                    a {
+                        font-weight: bold;
+                        
+                        
+                        img {
+                            width: 50px;
+                            border-radius: 50%;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .channel__videos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .video {
+                        // padding: 5px;
+                        margin: 5px 0;
+
+                        .video__image {
+                            position: relative;
+                            a {
+                                img {
+                                    border-radius: 20px;
+                                    width: 250px; height: 150px;
+                                }
+                            }
+                            span.video__time {
+                                position: absolute;
+                                bottom: 10px; right:10px;
+
+                                font-size: 13px;
+                                border-radius: 20px;
+                                padding: 3px;
+                                
+                                background-color: rgba(0,0,0,0.5) ;
+                                color: rgba(255,255,255,0.5);
+                                
+                            }
+                        }
+                        .video__details {
+
+                            .title {
+                                h1 {
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                }
+                            }
+                            .stats {
+                                display: flex;
+                                justify-content: space-between;
+                                span {
+                                    font-size: 10px;
+                                    color: @stats-text;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+            .recomended {
+                margin-left: 10px;
+                .recomended__title {
+                    margin: 20px 0;
+                    h1 {
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                }
+                .recomended__videos {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .recomended__video {
+                        padding-right: 10px;
+                        .recomended__video__image {
+                            position: relative;
+                            a {
+                                img {
+                                    width: 512px;
+                                    height: 250px;
+                                    border-radius: 20px;
+                                }
+                                span {
+                                    position: absolute;
+                                    bottom: 10px; right: 10px;
+
+                                    color: rgba(255,255, 255, 0.5);
+                                    background-color: rgba(0, 0, 0, 0.5);
+
+                                    border-radius: 20px;
+                                    padding: 4px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .recomended__video__details {
+                            .recomended__video__details__title {
+                                h1 {
+                                    font-weight: bold;
+                                }
+                            }
+                            .recomended__video__details__stats {
+                                display: flex;
+                                justify-content: space-between;
+                                span:first-child { padding: 0; }
+                                span {
+                                    padding-left: 10px;
+                                    font-size: 13px;
+                                    color: @stats-text;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
