@@ -1,3 +1,148 @@
 header
-    background-color: lightblue
-    
+    .container
+        display: flex
+        justify-content: space-between
+        padding: 0 $gutter*2
+        align-items: center
+        height: 56px
+svg
+    fill: #606060
+    cursor: pointer
+    &.hamburger
+        width: 25px
+        height: 25px
+        margin-right: 15px
+        
+    &.logo
+        width: 88px
+        height: 25px
+        fill: #212121
+    &.searcah
+        width: 20px
+        height: 20px
+        opacity: 0.6 
+        color: $color
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &.create
+        width: 25px
+        height: 25px
+    &.menu
+        width: 25px
+        height: 25px
+    &.bell
+        width: 25px
+        height: 25px
+
+form
+    min-width: 0
+    display: flex
+    align-items: center
+    .search
+        &__input
+            min-width: 566px
+            height: 32px
+            border: 1px rgb(211, 211, 211) solid
+            padding: 1px 10px
+        &__button
+            position: relative
+            border: 1px rgba(211, 211, 211, 0.6) solid
+            height: 32px
+            width: 65px
+            background-color: rgb(248, 248, 248)
+            border-left: none
+            cursor: pointer
+            &:hover
+                border: 1px rgba(211, 211, 211, 1) solid
+                border-left: none
+
+.end
+    width: 225px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.avatar 
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    cursor: pointer
+
+
+
+// Aside
+
+.two, .three, .four, .five, .six
+    border-top: 1px rgba(0, 0, 0, 0.1) solid
+    width: 100%
+
+.here // class where = If you are in page Trending. Set this class to one element and to svg ico
+    fill: $accent
+    background-color: #E5E5E5
+aside 
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 240px
+    height: 94vh
+    position: fixed
+    left: 0
+    font-size: $textcolor
+    overflow-y: scroll 
+    overflow-x: hidden
+    user-select: none
+// scroll bar (sideBar)
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background: transparent !important
+::-webkit-scrollbar-thumb
+    background: #bbbbbb
+    border-radius: 10px
+
+// first block
+.one
+    margin-bottom: 12px
+.SideBarElement
+    width: 240px
+    height: 40px
+    padding: 0 24px
+    &:hover
+        background-color: rgba(214, 214, 214, 0.5)
+
+.asideIco
+    width: 25px
+    height: 25px
+    margin-right: 24px
+
+// two block
+.two
+    padding-top: 12px
+// three block
+.three
+    padding-top: 12px
+    h3
+        color: #606060
+        text-transform: uppercase
+        display: block
+        padding: 0px 24px
+        font-size: $fontsize
+
+.asideAvatar
+    width: 25px
+    height: 25px
+    margin-right: 16px
+    border-radius: 50%
+// four
+.four
+    padding-top: 12px
+h3
+    color: #606060
+    text-transform: uppercase
+    display: block
+    padding: 0px 24px
+    font-size: $fontsize
